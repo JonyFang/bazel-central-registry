@@ -1,0 +1,10 @@
+{
+    "url": "https://github.com/ReactiveX/RxSwift/archive/refs/tags/6.5.0.tar.gz",
+    "integrity": "sha256-SpxFvnpVjUU/0mImp0yB+oEE1nvdxHq1nohhqg7lUyQ=",
+    "strip_prefix": "RxSwift-6.5.0",
+    "patches": {
+        "add_build_file.patch": "sha256-HLQJFIDjEMqYyW2HxMOllWfA+P9qOj5f7EFQDUt+v5Y=",
+        "module_dot_bazel.patch": "sha256-vK2ehmbBb+r0txH9qKTnVTdklVzu4ErhHaYBMvgAV5U="
+    },
+    "patch_strip": 0
+}

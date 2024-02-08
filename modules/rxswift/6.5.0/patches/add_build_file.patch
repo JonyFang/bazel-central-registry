@@ -1,0 +1,44 @@
+--- /dev/null
++++ BUILD.bazel
+@@ -0,0 +1,41 @@
++load("@build_bazel_rules_swift//swift:swift.bzl", "swift_library")
++package(default_visibility = ["//visibility:public"])
++
++swift_library(
++    name = "RxSwift",
++    srcs = glob([
++        "Sources/RxSwift/**/*.swift",
++    ]),
++    copts = ["-no-warnings-as-errors"],
++)
++
++objc_library(
++    name = "RxCocoaRuntime",
++    srcs = glob([
++        "Sources/RxCocoaRuntime/**/*.m",
++    ]),
++    hdrs = glob(["Sources/RxCocoaRuntime/include/*.h"]),
++    includes = ["Sources/RxCocoaRuntime/include"],
++    module_name = "RxCocoaRuntime",
++)
++
++
++swift_library(
++    name = "RxCocoa",
++    srcs = glob([
++        "Sources/RxCocoa/**/*.swift",
++    ]),
++    copts = ["-no-warnings-as-errors"],
++    defines = ["SWIFT_PACKAGE"],
++    deps = [":RxSwift", ":RxRelay", ":RxCocoaRuntime"],
++)
++
++swift_library(
++    name = "RxRelay",
++    srcs = glob([
++        "Sources/RxRelay/**/*.swift",
++    ]),
++    copts = ["-no-warnings-as-errors"],
++    deps = [":RxSwift"],
++)
++
