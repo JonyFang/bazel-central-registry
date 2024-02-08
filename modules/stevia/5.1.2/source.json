@@ -1,0 +1,10 @@
+{
+    "url": "https://github.com/freshOS/Stevia/archive/refs/tags/5.1.2.tar.gz",
+    "integrity": "sha256-maQLxWRVnMN2Vg43AEomzWj6CWa2xs8eZVnioLauLgQ=",
+    "strip_prefix": "Stevia-5.1.2",
+    "patches": {
+        "add_build_file.patch": "sha256-w4J2fZ7GQgv9ND8GbqRO5oFGlpzlhTs7zSfixUm1ZOk=",
+        "module_dot_bazel.patch": "sha256-HTfuYHOrb6SL/wbwClvAltF9GGEpwGwmpyr9Ofqr0XA="
+    },
+    "patch_strip": 0
+}
