@@ -1,0 +1,10 @@
+{
+    "url": "http://mobile-ep-bin.bilibili.co/ios/Carbon/bl-1.0.0-rc.7/Carbon_df7b155852e65787615339f2f8444c1236a1c4e7fa57b50ca582b4a418d46d67.0.0-rc.7.tar.gz",
+    "integrity": "sha256-33sVWFLmV4dhUzny+ERMEjahxOf6V7UMpYK0pBjUbWc=",
+    "strip_prefix": "carbon-bl-1.0.0-rc.7",
+    "patches": {
+        "add_build_file.patch": "sha256-oUjf7RHf2vKxte5uIY20UVz33JL5BBDMGdMxpsxhyiU=",
+        "module_dot_bazel.patch": "sha256-kkAtHEC1CBOnTxePtBUxr22P3pmYr/CVfNn2lcFr2yM="
+    },
+    "patch_strip": 0
+}
