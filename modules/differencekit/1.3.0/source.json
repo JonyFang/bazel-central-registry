@@ -1,0 +1,10 @@
+{
+    "url": "https://github.com/ra1028/DifferenceKit/archive/refs/tags/1.3.0.tar.gz",
+    "integrity": "sha256-6h+xa9TwxrudKXGQ1Zsd+ltRQ4MqaCrbWAF543/yVwE=",
+    "strip_prefix": "DifferenceKit-1.3.0",
+    "patches": {
+        "add_build_file.patch": "sha256-DBzjEdwNdDRm8UZydOXr1ZTYn2KauUWU8pVlZ0ESOjo=",
+        "module_dot_bazel.patch": "sha256-Yw9QERcU3f5tVZK6orKeKh9ncb5Rkm3v6bI0ZZ2wOmM="
+    },
+    "patch_strip": 0
+}
